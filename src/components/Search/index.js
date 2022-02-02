@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 
 function Search(){
 
-    
     return (
         <div id="search">
             Who do you want to search?
@@ -24,24 +23,12 @@ function Search(){
 
 
 
-function SearchForm({ getResult }) {
-
-    const [ location, setLocation ] = useState("")
-
-    const handleSubmit = e => {
-        getResult(location);
-    }
-
-    const updateInput = e => {
-        const input = e.target.value 
-        setLocation(input)
-    }
-
+function SearchForm() {
 
     return (
-        <form role="form" onSubmit={handleSubmit}>
-            <label for="location">Location</label>
-            <input id="location" type="text" />
+        <form role="form" /*onSubmit={}*/>
+            <label for="username">Location</label>
+            <input id="username" type="text" />
             <input type="submit" value="Search" />
         </form>
     );
