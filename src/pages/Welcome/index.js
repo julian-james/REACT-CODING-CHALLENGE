@@ -1,5 +1,6 @@
 import React from 'react';
-import { Search, Result } from '../../components'
+import Search from '../../components/Search';
+import Result from '../../components/Result';
 
 const Welcome = () => (
     <>
