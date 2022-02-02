@@ -1,9 +1,11 @@
 import React from 'react';
+import { Search, Result } from '../../components'
 
 const Welcome = () => (
     <>
     <h1>Sunrise, Sunset</h1>
-    <img style={{ maxHeight: "70vh", maxWidth: "80vw" }} src="../../images/logo.svg" alt="Sunrise" />
+    <Search />
+    <Result />
     </>
 )
 
